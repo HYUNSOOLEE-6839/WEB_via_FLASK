@@ -6,4 +6,4 @@
 <br><hr>
 <br>
 2021. 04/03
-<a href="https://github.com/HYUNSOOLEE-6839/WEB_via_FLASK/blob/main/Classification/cancer_model.ipynb">Prediction for Cancer</a>
+<a href="https://github.com/HYUNSOOLEE-6839/WEB_via_FLASK/blob/main/Classification/cancer_model.ipynb">Prediction for Cancer</a> + Result page (html) to be produced.
