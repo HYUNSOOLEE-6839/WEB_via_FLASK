@@ -1,4 +1,8 @@
 # WEB_via_FLASK
 
+2021. 04/02  Main Screen Configuration <br>
+
 ![main_0402](https://user-images.githubusercontent.com/70185551/113389357-dd469780-93ca-11eb-8ca8-ce6be354cb0f.jpg)
-2021. 04/02  Main Screen Configuration
+<br><hr>
+
+<a href="https://github.com/HYUNSOOLEE-6839/WEB_via_FLASK/blob/main/Classification/cancer_model.ipynb">Prediction for Cancer</a>
