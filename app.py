@@ -1,6 +1,9 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import Flask, Blueprint, render_template, request, session, g
+from classification.clsf import clsf_bp
+import os, json
 
+app = Flask(__name__)
+app.register_blueprint(clsf_bp, url_prefix='/classification')
 
 @app.route('/')
 def index():
