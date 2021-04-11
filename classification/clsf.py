@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, session, g
 from flask import current_app
-from fbprophet import Prophet
+# from fbprophet import Prophet
 from datetime import datetime, timedelta
 from sklearn.preprocessing import MinMaxScaler
 import os, joblib
