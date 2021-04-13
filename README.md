@@ -10,4 +10,4 @@
 <br><br><br>
 
 2021. 04/13 Web Page Configuration - Classification <br>
-<img width="720" alt="스크린샷 2021-04-13 오후 2 58 11" src="https://user-images.githubusercontent.com/70185551/114503919-ff60d500-9c68-11eb-9d76-efd4ba3bff03.png"> <img width="720" alt="스크린샷 2021-04-13 오후 2 58 18" src="https://user-images.githubusercontent.com/70185551/114504012-26b7a200-9c69-11eb-93b0-f29c0958adb8.png">
+<img width="40%" alt="스크린샷 2021-04-13 오후 2 58 11" src="https://user-images.githubusercontent.com/70185551/114503919-ff60d500-9c68-11eb-9d76-efd4ba3bff03.png"> <img width="40%" alt="스크린샷 2021-04-13 오후 2 58 18" src="https://user-images.githubusercontent.com/70185551/114504012-26b7a200-9c69-11eb-93b0-f29c0958adb8.png">
