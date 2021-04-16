@@ -19,4 +19,4 @@
 <br>
 
 2021. 04/16 Web Page Configuration - Classification_Titanic
-<img width="43%" alt="스크린샷 2021-04-16 오후 5 38 42" src="https://user-images.githubusercontent.com/70185551/114998664-2541e000-9edc-11eb-8f47-0295334602dd.png"> <img width="43%" alt="스크린샷 2021-04-16 오후 5 38 52" src="https://user-images.githubusercontent.com/70185551/114998682-296dfd80-9edc-11eb-8a90-8f55d01c91cd.png">
+<img width="40%" alt="스크린샷 2021-04-16 오후 5 38 42" src="https://user-images.githubusercontent.com/70185551/114998664-2541e000-9edc-11eb-8f47-0295334602dd.png"> <img width="40%" alt="스크린샷 2021-04-16 오후 5 38 52" src="https://user-images.githubusercontent.com/70185551/114998682-296dfd80-9edc-11eb-8a90-8f55d01c91cd.png">
