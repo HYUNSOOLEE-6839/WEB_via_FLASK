@@ -26,5 +26,4 @@
 <br>
 
 2021. 04/17 Web Page Configuration - Classification_Iris <br>
-<img width="45%" alt="스크린샷 2021-04-17 오후 6 11 27" src="https://user-images.githubusercontent.com/70185551/115107890-6dc6cf80-9fa8-11eb-83d1-3af842b079f3.png">
-<img width="45%" alt="스크린샷 2021-04-17 오후 6 11 35" src="https://user-images.githubusercontent.com/70185551/115107894-71f2ed00-9fa8-11eb-9f74-60537d89fba0.png">
+<img width="45%" alt="스크린샷 2021-04-17 오후 6 11 27" src="https://user-images.githubusercontent.com/70185551/115107890-6dc6cf80-9fa8-11eb-83d1-3af842b079f3.png"> <img width="45%" alt="스크린샷 2021-04-17 오후 6 11 35" src="https://user-images.githubusercontent.com/70185551/115107894-71f2ed00-9fa8-11eb-9f74-60537d89fba0.png">
