@@ -32,6 +32,7 @@
 <hr>
 <br>
 
-2021. 04/18 Web Page Configuration - Classification_Pima <br>
+2021. 04/18 Web Page Configuration - Classification_Pima & Wine <br>
 <img width="45%" alt="스크린샷 2021-04-18 오후 4 45 45" src="https://user-images.githubusercontent.com/70185551/115139129-39681780-a06b-11eb-8aef-0e9fa8f249ec.png"> <img width="45%" alt="스크린샷 2021-04-18 오후 4 45 53" src="https://user-images.githubusercontent.com/70185551/115139132-3d943500-a06b-11eb-9746-835a5abb3e85.png">
-<img width="45%" alt="스크린샷 2021-04-18 오후 5 39 40" src="https://user-images.githubusercontent.com/70185551/115139499-27877400-a06d-11eb-8e5b-d3890a3fe2d7.png"> <img width="45%" alt="스크린샷 2021-04-18 오후 5 39 31" src="https://user-images.githubusercontent.com/70185551/115139512-2bb39180-a06d-11eb-948d-31613907a65e.png">
+<img width="45%" alt="스크린샷 2021-04-18 오후 5 42 26" src="https://user-images.githubusercontent.com/70185551/115139570-7f25df80-a06d-11eb-80a1-062b9eaaeb1d.png"> <img width="45%" alt="스크린샷 2021-04-18 오후 5 42 31" src="https://user-images.githubusercontent.com/70185551/115139573-8351fd00-a06d-11eb-9d1b-5a3ac1f9e904.png">
+
