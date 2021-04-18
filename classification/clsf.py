@@ -44,23 +44,47 @@ def titanic():
         return render_template('classification/titanic_res.html', menu=menu, 
                                 res=result, org=org)
 
+@clsf_bp.route('/pima', methods=['GET', 'POST'])
+def pima():
+    if request.method == 'GET':
+        return render_template('classification/pima.html', menu=menu)
+    else:
+        index = int(request.form['index'] or '0')
+        df = pd.read_csv('static/data/pima_test.csv')
+        scaler = joblib.load('static/model/pima_scaler.pkl')
+        test_data = df.iloc[index, :-1].values.reshape(1,-1)
+        test_scaled = scaler.transform(test_data)
+        label = df.iloc[index, -1]
+        lrc = joblib.load('static/model/pima_lr.pkl')
+        svc = joblib.load('static/model/pima_sv.pkl')
+        rfc = joblib.load('static/model/pima_rf.pkl')
+        pred_lr = lrc.predict(test_scaled)
+        pred_sv = svc.predict(test_scaled)
+        pred_rf = rfc.predict(test_scaled)
+        result = {'index':index, 'label':label,
+                  'pred_lr':pred_lr[0], 'pred_sv':pred_sv[0], 'pred_rf':pred_rf[0]}
+        org = dict(zip(df.columns[:-1], df.iloc[index, :-1]))
+        return render_template('classification/pima_res.html', menu=menu, 
+                                res=result, org=org)
+
 @clsf_bp.route('/cancer', methods=['GET', 'POST'])
 def cancer():
     if request.method == 'GET':
         return render_template('classification/cancer.html', menu=menu)
     else:
-        index = int(request.form['index'])
+        index = int(request.form['index'] or '0')
         df = pd.read_csv('static/data/cancer_test.csv')
-        scaler = MinMaxScaler()
-        scaled_test = scaler.fit_transform(df.iloc[:, :-1])
-        test_data = scaled_test[index, :].reshape(1,-1)
+        scaler = joblib.load('static/model/cancer_scaler.pkl')
+        test_data = df.iloc[index, :-1].values.reshape(1,-1)
+        test_scaled = scaler.transform(test_data)
+
         label = df.iloc[index, -1]
         lrc = joblib.load('static/model/cancer_lr.pkl')
         svc = joblib.load('static/model/cancer_sv.pkl')
         rfc = joblib.load('static/model/cancer_rf.pkl')
-        pred_lr = lrc.predict(test_data)
-        pred_sv = svc.predict(test_data)
-        pred_rf = rfc.predict(test_data)
+        pred_lr = lrc.predict(test_scaled)
+        pred_sv = svc.predict(test_scaled)
+        pred_rf = rfc.predict(test_scaled)
         result = {'index':index, 'label':label,
                   'pred_lr':pred_lr[0], 'pred_sv':pred_sv[0], 'pred_rf':pred_rf[0]}
         org = dict(zip(df.columns[:-1], df.iloc[index, :-1]))
@@ -92,4 +116,27 @@ def iris():
                   'pred_rf':f'{pred_rf[0]} ({species[pred_rf[0]]})'}
         org = dict(zip(df.columns[:-1], df.iloc[index, :-1]))
         return render_template('classification/iris_res.html', menu=menu, 
+                                res=result, org=org)
+
+@clsf_bp.route('/wine', methods=['GET', 'POST'])
+def wine():
+    if request.method == 'GET':
+        return render_template('classification/wine.html', menu=menu)
+    else:
+        index = int(request.form['index'] or '0')
+        df = pd.read_csv('static/data/wine_test.csv')
+        scaler = joblib.load('static/model/wine_scaler.pkl')
+        test_data = df.iloc[index, :-1].values.reshape(1,-1)
+        test_scaled = scaler.transform(test_data)
+        label = df.iloc[index, -1]
+        lrc = joblib.load('static/model/wine_lr.pkl')
+        svc = joblib.load('static/model/wine_sv.pkl')
+        rfc = joblib.load('static/model/wine_rf.pkl')
+        pred_lr = lrc.predict(test_scaled)
+        pred_sv = svc.predict(test_scaled)
+        pred_rf = rfc.predict(test_scaled)
+        result = {'index':index, 'label':label,
+                  'pred_lr':pred_lr[0], 'pred_sv':pred_sv[0], 'pred_rf':pred_rf[0]}
+        org = dict(zip(df.columns[:-1], df.iloc[index, :-1]))
+        return render_template('classification/wine_res.html', menu=menu, 
                                 res=result, org=org)
