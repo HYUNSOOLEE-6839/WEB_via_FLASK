@@ -40,5 +40,6 @@
 <hr>
 <br>
 
+2021. 04/19 Web Page Configuration - Regression_Boston & Diabetes <br>
 <img width="45%" alt="스크린샷 2021-04-19 오후 3 25 34" src="https://user-images.githubusercontent.com/70185551/115191718-c7540900-a124-11eb-8417-c65d3c6a7e1c.png"> <img width="45%" alt="스크린샷 2021-04-19 오후 3 26 01" src="https://user-images.githubusercontent.com/70185551/115191732-ccb15380-a124-11eb-8ae6-bc400ad69953.png">
 <img width="45%" alt="스크린샷 2021-04-19 오후 3 33 05" src="https://user-images.githubusercontent.com/70185551/115191734-cd49ea00-a124-11eb-9576-03e38f17a389.png"> <img width="45%" alt="스크린샷 2021-04-19 오후 3 33 12" src="https://user-images.githubusercontent.com/70185551/115191726-cb802680-a124-11eb-8188-04fdd1839a11.png">
