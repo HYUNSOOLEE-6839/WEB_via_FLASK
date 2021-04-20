@@ -51,6 +51,5 @@
 2021. 04/20 Web Page Configuration - Clustering & Regression_Iris <br>
 <img width="45%" alt="스크린샷 2021-04-20 오후 2 30 31" src="https://user-images.githubusercontent.com/70185551/115354348-7f041c00-a1f4-11eb-8055-2b9134dfb636.png">
 <img width="45%" alt="스크린샷 2021-04-20 오후 2 30 39" src="https://user-images.githubusercontent.com/70185551/115354357-81ff0c80-a1f4-11eb-9426-8d6b1e4c3c2c.png">
-<img width="45%" alt="스크린샷 2021-04-20 오후 4 12 03" src="https://user-images.githubusercontent.com/70185551/115354364-8297a300-a1f4-11eb-8544-d489cf33ac37.png">
-<img width="45%" alt="스크린샷 2021-04-20 오후 4 11 38" src="https://user-images.githubusercontent.com/70185551/115354370-83c8d000-a1f4-11eb-9b35-fb900d775d20.png">
+
 
