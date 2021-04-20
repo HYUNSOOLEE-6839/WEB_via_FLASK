@@ -43,3 +43,14 @@
 2021. 04/19 Web Page Configuration - Regression_Boston & Diabetes <br>
 <img width="45%" alt="스크린샷 2021-04-19 오후 3 25 34" src="https://user-images.githubusercontent.com/70185551/115191718-c7540900-a124-11eb-8417-c65d3c6a7e1c.png"> <img width="45%" alt="스크린샷 2021-04-19 오후 3 26 01" src="https://user-images.githubusercontent.com/70185551/115191732-ccb15380-a124-11eb-8ae6-bc400ad69953.png">
 <img width="45%" alt="스크린샷 2021-04-19 오후 3 33 05" src="https://user-images.githubusercontent.com/70185551/115191734-cd49ea00-a124-11eb-9576-03e38f17a389.png"> <img width="45%" alt="스크린샷 2021-04-19 오후 3 33 12" src="https://user-images.githubusercontent.com/70185551/115191726-cb802680-a124-11eb-8188-04fdd1839a11.png">
+
+<br>
+<hr>
+<br>
+
+2021. 04/20 Web Page Configuration - Clustering & Regression_Iris <br>
+<img width="45%" alt="스크린샷 2021-04-20 오후 2 30 31" src="https://user-images.githubusercontent.com/70185551/115354348-7f041c00-a1f4-11eb-8055-2b9134dfb636.png">
+<img width="45%" alt="스크린샷 2021-04-20 오후 2 30 39" src="https://user-images.githubusercontent.com/70185551/115354357-81ff0c80-a1f4-11eb-9426-8d6b1e4c3c2c.png">
+<img width="45%" alt="스크린샷 2021-04-20 오후 4 12 03" src="https://user-images.githubusercontent.com/70185551/115354364-8297a300-a1f4-11eb-8544-d489cf33ac37.png">
+<img width="45%" alt="스크린샷 2021-04-20 오후 4 11 38" src="https://user-images.githubusercontent.com/70185551/115354370-83c8d000-a1f4-11eb-9b35-fb900d775d20.png">
+
