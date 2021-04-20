@@ -83,3 +83,37 @@ def diabetes():
         result_dict = {'index':index, 'feature':feature, 'y':y_test, 'pred':pred}
         return render_template('regression/diabetes_res.html', res=result_dict, mtime=mtime,
                                 menu=menu)
+
+@rgrs_bp.route('/iris', methods=['GET', 'POST'])
+def iris():
+    if request.method == 'GET':
+        return render_template('regression/iris.html', menu=menu)
+    else:
+        index = int(request.form['index'] or '0')
+        feature_name = request.form['feature']
+        column_dict = {'sl':'Sepal length', 'sw':'Sepal width', 
+                       'pl':'Petal length', 'pw':'Petal width', 
+                       'species':['Setosa', 'Versicolor', 'Virginica']}
+        column_list = list(column_dict.keys())
+
+        df = pd.read_csv('static/data/iris_train.csv')
+        df.columns = column_list
+        X = df.drop(columns=feature_name, axis=1).values
+        y = df[feature_name].values
+
+        lr = LinearRegression()
+        lr.fit(X, y)
+        weight, bias = lr.coef_, lr.intercept_
+
+        df_test = pd.read_csv('static/data/iris_test.csv')
+        df_test.columns = column_list
+        X_test = df_test.drop(columns=feature_name, axis=1).values[index]
+        pred_value = np.dot(X_test, weight.T) + bias
+
+        x_test = list(df_test.iloc[index,:-1].values)
+        x_test.append(column_dict['species'][int(df_test.iloc[index,-1])])
+        org = dict(zip(column_list, x_test))
+        pred = dict(zip(column_list[:-1], [0,0,0,0]))
+        pred[feature_name] = np.round(pred_value, 2)
+        return render_template('regression/iris_res.html', menu=menu,
+                                index=index, org=org, pred=pred, feature=column_dict[feature_name])

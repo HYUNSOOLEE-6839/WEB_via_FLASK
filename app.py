@@ -1,11 +1,13 @@
 from flask import Flask, Blueprint, render_template, request, session, g
 from Classification.clsf import clsf_bp
 from Regression.rgrs import rgrs_bp
+from Clustering.clus import clus_bp
 import os, json
 
 app = Flask(__name__)
 app.register_blueprint(clsf_bp, url_prefix='/classification')
 app.register_blueprint(rgrs_bp, url_prefix='/regression')
+app.register_blueprint(clus_bp, url_prefix='/cluster')
 
 @app.route('/')
 def index():
