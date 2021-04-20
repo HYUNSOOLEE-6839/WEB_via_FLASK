@@ -49,7 +49,6 @@
 <br>
 
 2021. 04/20 Web Page Configuration - Clustering & Regression_Iris <br>
-<img width="45%" alt="스크린샷 2021-04-20 오후 2 30 31" src="https://user-images.githubusercontent.com/70185551/115354348-7f041c00-a1f4-11eb-8055-2b9134dfb636.png">
-<img width="45%" alt="스크린샷 2021-04-20 오후 2 30 39" src="https://user-images.githubusercontent.com/70185551/115354357-81ff0c80-a1f4-11eb-9426-8d6b1e4c3c2c.png">
+<img width="45%" alt="스크린샷 2021-04-20 오후 2 30 31" src="https://user-images.githubusercontent.com/70185551/115354348-7f041c00-a1f4-11eb-8055-2b9134dfb636.png"> <img width="45%" alt="스크린샷 2021-04-20 오후 2 30 39" src="https://user-images.githubusercontent.com/70185551/115354357-81ff0c80-a1f4-11eb-9426-8d6b1e4c3c2c.png"> <img width="30%" alt="스크린샷 2021-04-20 오후 4 26 13" src="https://user-images.githubusercontent.com/70185551/115355231-6ea07100-a1f5-11eb-8ec2-855fbb2729a9.png"> <img width="30%" alt="스크린샷 2021-04-20 오후 4 26 18" src="https://user-images.githubusercontent.com/70185551/115355284-7bbd6000-a1f5-11eb-8147-a43197d945bf.png"> <img width="30%" alt="스크린샷 2021-04-20 오후 4 27 12" src="https://user-images.githubusercontent.com/70185551/115355303-80821400-a1f5-11eb-900c-922f47912e0d.png">
 
 
