@@ -1,0 +1,10 @@
+.DS_Store
+*.csv
+*.tsv
+*.pkl
+*.xlsx
+*.csvs
+*.exe
+*.txt
+/driver
+mecab
