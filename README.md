@@ -59,3 +59,9 @@
 <img width="45%" alt="스크린샷 2021-04-21 오후 6 00 35" src="https://user-images.githubusercontent.com/70185551/115528809-54d25d00-a2cd-11eb-8675-e97c325a2548.png"><img width="45%" alt="스크린샷 2021-04-21 오후 6 01 57" src="https://user-images.githubusercontent.com/70185551/115528833-59971100-a2cd-11eb-80da-a0f15e99d62c.png">
 <img width="45%" alt="스크린샷 2021-04-21 오후 6 02 04" src="https://user-images.githubusercontent.com/70185551/115528837-5a2fa780-a2cd-11eb-9250-4ee37d75501e.png"><img width="45%" alt="스크린샷 2021-04-21 오후 6 02 13" src="https://user-images.githubusercontent.com/70185551/115528844-5ac83e00-a2cd-11eb-92bd-0c9cd7494c33.png">
 
+<br>
+<hr>
+<br>
+
+2021. 04/22 Web Page Configuration - Advanced_Classification / 20 News <br>
+<img width="1440" alt="스크린샷 2021-04-22 오후 2 21 31" src="https://user-images.githubusercontent.com/70185551/115659985-52780d80-a376-11eb-890b-f453398fc4dd.png"><img width="1440" alt="스크린샷 2021-04-22 오후 2 22 46" src="https://user-images.githubusercontent.com/70185551/115660001-56a42b00-a376-11eb-8e3f-adbe00c8ed44.png">
