@@ -79,3 +79,34 @@ def imdb():
         result_dict = {'label':label, 'pred_cl':pred_cl, 'pred_tl':pred_tl}
         return render_template('advanced/imdb_res.html', menu=menu, review=test_data[0],
                                 res=result_dict)
+
+@aclsf_bp.route('/news', methods=['GET', 'POST'])
+def news():
+    target_names = ['alt.atheism', 'comp.graphics', 'comp.os.ms-windows.misc',
+                    'comp.sys.ibm.pc.hardware', 'comp.sys.mac.hardware', 'comp.windows.x',
+                    'misc.forsale', 'rec.autos', 'rec.motorcycles', 'rec.sport.baseball',
+                    'rec.sport.hockey', 'sci.crypt', 'sci.electronics', 'sci.med',
+                    'sci.space', 'soc.religion.christian', 'talk.politics.guns',
+                    'talk.politics.mideast', 'talk.politics.misc', 'talk.religion.misc']
+    if request.method == 'GET':
+        return render_template('advanced/news.html', menu=menu)
+    else:
+        index = int(request.form['index'] or '0')
+        df = pd.read_csv('static/data/news_test.csv')
+        label = f'{df.target[index]} ({target_names[df.target[index]]})'
+        test_data = []
+        test_data.append(df.data[index])
+
+        news_count_lr = joblib.load('static/model/news_count_lr.pkl')
+        news_tfidf_lr = joblib.load('static/model/news_tfidf_lr.pkl')
+        news_tfidf_sv = joblib.load('static/model/news_tfidf_sv.pkl')
+        pred_c_lr = news_count_lr.predict(test_data)
+        pred_t_lr = news_tfidf_lr.predict(test_data)
+        pred_t_sv = news_tfidf_sv.predict(test_data)
+        result_dict = {'index':index, 'label':label, 
+                       'pred_c_lr':f'{pred_c_lr[0]} ({target_names[pred_c_lr[0]]})',
+                       'pred_t_lr':f'{pred_t_lr[0]} ({target_names[pred_t_lr[0]]})',
+                       'pred_t_sv':f'{pred_t_sv[0]} ({target_names[pred_t_sv[0]]})'}
+        
+        return render_template('advanced/news_res.html', menu=menu, news=df.data[index],
+                                res=result_dict)
