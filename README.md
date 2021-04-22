@@ -64,4 +64,4 @@
 <br>
 
 2021. 04/22 Web Page Configuration - Advanced_Classification / 20 News <br>
-<img width="1440" alt="스크린샷 2021-04-22 오후 2 21 31" src="https://user-images.githubusercontent.com/70185551/115659985-52780d80-a376-11eb-890b-f453398fc4dd.png"><img width="1440" alt="스크린샷 2021-04-22 오후 2 22 46" src="https://user-images.githubusercontent.com/70185551/115660001-56a42b00-a376-11eb-8e3f-adbe00c8ed44.png">
+<img width="45%" alt="스크린샷 2021-04-22 오후 2 21 31" src="https://user-images.githubusercontent.com/70185551/115659985-52780d80-a376-11eb-890b-f453398fc4dd.png"><img width="45%" alt="스크린샷 2021-04-22 오후 2 22 46" src="https://user-images.githubusercontent.com/70185551/115660001-56a42b00-a376-11eb-8e3f-adbe00c8ed44.png">
