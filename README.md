@@ -65,3 +65,10 @@
 
 2021. 04/22 Web Page Configuration - Advanced_Classification / 20 News <br>
 <img width="45%" alt="스크린샷 2021-04-22 오후 2 21 31" src="https://user-images.githubusercontent.com/70185551/115659985-52780d80-a376-11eb-890b-f453398fc4dd.png"><img width="45%" alt="스크린샷 2021-04-22 오후 2 22 46" src="https://user-images.githubusercontent.com/70185551/115660001-56a42b00-a376-11eb-8e3f-adbe00c8ed44.png">
+
+<br>
+<hr>
+<br>
+
+2021. 04/23 Web Page Configuration - Advanced_Classification / Naver_Movie_Review <br>
+<img width="45%" alt="스크린샷 2021-04-23 오후 3 05 06 1" src="https://user-images.githubusercontent.com/70185551/115826599-20ce7780-a446-11eb-925b-f54c8ca5be1b.png"> <img width="45%" alt="스크린샷 2021-04-23 오후 3 07 25" src="https://user-images.githubusercontent.com/70185551/115826606-23c96800-a446-11eb-9c85-ab5d45bf3a5e.png">
