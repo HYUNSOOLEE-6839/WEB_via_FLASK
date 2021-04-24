@@ -72,3 +72,11 @@
 
 2021. 04/23 Web Page Configuration - Advanced_Classification / Naver_Movie_Review <br>
 <img width="45%" alt="스크린샷 2021-04-23 오후 3 05 06 1" src="https://user-images.githubusercontent.com/70185551/115826599-20ce7780-a446-11eb-925b-f54c8ca5be1b.png"> <img width="45%" alt="스크린샷 2021-04-23 오후 3 07 25" src="https://user-images.githubusercontent.com/70185551/115826606-23c96800-a446-11eb-9c85-ab5d45bf3a5e.png">
+
+<br>
+<hr>
+<br>
+
+2021. 04/24 Web Page Configuration - Folium / Seoul_Park <br>
+<img width="45%" alt="스크린샷 2021-04-24 오후 1 16 02" src="https://user-images.githubusercontent.com/70185551/115946942-816dbb00-a4ff-11eb-90a8-5557f02136d9.png"><img width="45%" alt="스크린샷 2021-04-24 오후 1 16 08" src="https://user-images.githubusercontent.com/70185551/115946949-86cb0580-a4ff-11eb-8a24-8f4907f2b00d.png">
+<img width="45%" alt="스크린샷 2021-04-24 오후 1 16 19" src="https://user-images.githubusercontent.com/70185551/115946951-87fc3280-a4ff-11eb-9b7c-a4a615bf5baf.png"><img width="45%" alt="스크린샷 2021-04-24 오후 1 16 24" src="https://user-images.githubusercontent.com/70185551/115946952-892d5f80-a4ff-11eb-80d9-b96577ff2d00.png">
