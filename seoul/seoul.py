@@ -27,11 +27,12 @@ def park():
         html_file = os.path.join(current_app.root_path, 'static/img/park.html')
         map.save(html_file)
         mtime = int(os.stat(html_file).st_mtime)
-        return render_template('seoul/park.html', menu=menu,
+        return render_template('seoul/park.html', menu=menu, 
                                 park_list=list(park_new['공원명'].sort_values()), 
                                 gu_list=list(park_gu.index), mtime=mtime)
     else:
-        gubun = request.form['gubun']        if gubun == 'park':
+        gubun = request.form['gubun']
+        if gubun == 'park':
             park_name = request.form['name']
             df = park_new[park_new['공원명'] == park_name].reset_index()
             park_result = {'name':park_name, 'addr':df['공원주소'][0], 
@@ -70,3 +71,100 @@ def park():
             mtime = int(os.stat(html_file).st_mtime)
             return render_template('seoul/park_res2.html', menu=menu, 
                                     park_result=park_result, mtime=mtime)
+
+@seoul_bp.route('/park_gu/<option>')
+def park_gu(option):
+    park_new = pd.read_csv('./static/data/park_info.csv')
+    park_gu = pd.read_csv('./static/data/park_gu.csv')
+    park_gu.set_index('지역', inplace=True)
+    geo_str = json.load(open('./static/data/skorea_municipalities_geo_simple.json',
+                         encoding='utf8'))
+    option_dict = {'area':'공원면적', 'count':'공원수', 'area_ratio':'공원면적 비율', 'per_person':'인당 공원면적'}
+    column_index = option_dict[option].replace(' ','')
+    
+    map = folium.Map(location=[37.5502, 126.982], zoom_start=11, tiles='Stamen Toner')
+    map.choropleth(geo_data = geo_str, data = park_gu[column_index],
+                    columns = [park_gu.index, park_gu[column_index]],
+                    fill_color = 'PuRd', key_on = 'feature.id')
+    for i in park_new.index:
+        folium.CircleMarker([park_new.lat[i], park_new.lng[i]], 
+                        radius=int(park_new['size'][i]),
+                        tooltip=f"{park_new['공원명'][i]}({int(park_new.area[i])}㎡)",
+                        color='green', fill_color='green').add_to(map)
+    html_file = os.path.join(current_app.root_path, 'static/img/park_gu.html')
+    map.save(html_file)
+    mtime = int(os.stat(html_file).st_mtime)
+    return render_template('seoul/park_gu.html', menu=menu, 
+                            option=option, option_dict=option_dict, mtime=mtime)
+
+@seoul_bp.route('/crime/<option>')
+def crime(option):
+    crime = pd.read_csv('./static/data/crime.csv', index_col='구별')
+    police = pd.read_csv('./static/data/police.csv')
+    geo_str = json.load(open('./static/data/skorea_municipalities_geo_simple.json',
+                         encoding='utf8'))
+    option_dict = {'crime':'범죄', 'murder':'살인', 'rob':'강도', 'rape':'강간', 'thief':'절도', 'violence':'폭력',
+                   'arrest':'검거율', 'a_murder':'살인검거율', 'a_rob':'강도검거율', 'a_rape':'강간검거율', 
+                   'a_thief':'절도검거율', 'a_violence':'폭력검거율'}
+    current_app.logger.debug(option_dict[option])
+
+    map = folium.Map(location=[37.5502, 126.982], zoom_start=11)
+    if option in ['crime', 'murder', 'rob', 'rape', 'thief', 'violence']:
+        map.choropleth(geo_data = geo_str, data = crime[option_dict[option]],
+               columns = [crime.index, crime[option_dict[option]]],
+               fill_color = 'PuRd', key_on = 'feature.id')
+    else:
+        map.choropleth(geo_data = geo_str, data = crime[option_dict[option]],
+               columns = [crime.index, crime[option_dict[option]]],
+               fill_color = 'YlGnBu', key_on = 'feature.id')
+        for i in police.index:
+            folium.CircleMarker([police.lat[i], police.lng[i]], radius=10,
+                                tooltip=police['관서명'][i],
+                                color='crimson', fill_color='crimson').add_to(map)
+
+    html_file = os.path.join(current_app.root_path, 'static/img/crime.html')
+    map.save(html_file)
+    mtime = int(os.stat(html_file).st_mtime)
+    return render_template('seoul/crime.html', menu=menu, 
+                            option=option, option_dict=option_dict, mtime=mtime)
+
+@seoul_bp.route('/cctv/<option>')
+def cctv(option):
+    df = pd.read_csv('./static/data/cctv.csv')
+    df.set_index('구별', inplace=True)
+    df_sort = df.sort_values('오차', ascending=False)
+
+    if option == 'graph':
+        fp1 = np.polyfit(df['인구수'], df['소계'], 1)
+        fx = np.array([100000, 700000])
+        f1 = np.poly1d(fp1)
+        fy = f1(fx)
+
+        plt.figure(figsize=(12,8))
+        plt.scatter(df['인구수'], df['소계'], c=df['오차'], s=50)
+        plt.plot(fx, fy, ls='dashed', lw=3, color='g')
+
+        for i in range(10): 
+            plt.text(df_sort['인구수'][i]+5000, df_sort['소계'][i]-50,
+                    df_sort.index[i], fontsize=15)
+
+        plt.grid(True)
+        plt.title('인구수와 CCTV 댓수의 관계', fontsize=20)
+        plt.xlabel('인구수')
+        plt.ylabel('CCTV')
+        plt.colorbar()
+        img_file = os.path.join(current_app.root_path, 'static/img/cctv.png')
+        plt.savefig(img_file)
+        mtime = int(os.stat(img_file).st_mtime)
+
+        return render_template('seoul/cctv.html', menu=menu, 
+                                mtime=mtime)
+
+    else:
+        tbl = []
+        for i in range(25):
+            row =  {'idx':df.index[i], 'number':df['소계'][i], 'inc':df['최근증가율'][i], 
+                    'population':df['인구수'][i], 'ratio':df['cctv비율'][i]}
+            tbl.append(row)
+        return render_template('seoul/cctv_table.html', menu=menu, 
+                                tbl=tbl)
