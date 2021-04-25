@@ -80,3 +80,10 @@
 2021. 04/24 Web Page Configuration - Folium / Seoul_Park <br>
 <img width="45%" alt="스크린샷 2021-04-24 오후 1 16 02" src="https://user-images.githubusercontent.com/70185551/115946942-816dbb00-a4ff-11eb-90a8-5557f02136d9.png"><img width="45%" alt="스크린샷 2021-04-24 오후 1 16 08" src="https://user-images.githubusercontent.com/70185551/115946949-86cb0580-a4ff-11eb-8a24-8f4907f2b00d.png">
 <img width="45%" alt="스크린샷 2021-04-24 오후 1 16 19" src="https://user-images.githubusercontent.com/70185551/115946951-87fc3280-a4ff-11eb-9b7c-a4a615bf5baf.png"><img width="45%" alt="스크린샷 2021-04-24 오후 1 16 24" src="https://user-images.githubusercontent.com/70185551/115946952-892d5f80-a4ff-11eb-80d9-b96577ff2d00.png">
+
+<br>
+<hr>
+<br>
+
+2021. 04/25 Web Page Configuration - Folium / Seoul_Crime<br>
+<img width="45%" alt="스크린샷 2021-04-25 오후 8 43 56" src="https://user-images.githubusercontent.com/70185551/115992171-3b038380-a607-11eb-8e37-a000d7b5cd05.png"> <img width="45%" alt="스크린샷 2021-04-25 오후 8 44 11" src="https://user-images.githubusercontent.com/70185551/115992176-4191fb00-a607-11eb-90ae-6431deeadd4d.png">
