@@ -37,7 +37,6 @@ def cluster():
         file_csv = os.path.join(current_app.root_path, 'static/upload/') + f_csv.filename
         f_csv.save(file_csv)
         current_app.logger.debug(f"{k_number}, {f_csv}, {file_csv}")
-
         df_csv = pd.read_csv(file_csv)
         # 전처리 - 정규화
         scaler = StandardScaler()
@@ -77,7 +76,6 @@ def cluster():
         plt.title(f'{k_number} Clusters Visualization by 2 PCA Components')
         img_file = os.path.join(current_app.root_path, 'static/img/cluster1.png')
         plt.savefig(img_file)
-
         mtime = int(os.stat(img_file).st_mtime)
         return render_template('cluster/cluster_res.html', menu=menu,
                                 k_number=k_number, mtime=mtime)

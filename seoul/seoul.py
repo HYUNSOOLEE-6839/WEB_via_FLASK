@@ -7,10 +7,12 @@ import pandas as pd
 import matplotlib as mpl 
 import matplotlib.pyplot as plt
 
+
 seoul_bp = Blueprint('seoul_bp', __name__)
 menu = {'ho':0, 'da':1, 'ml':0, 
         'se':1, 'co':0, 'cg':0, 'cr':0, 'wc':0,
         'cf':0, 'ac':0, 're':0, 'cu':0, 'nl':0}
+
 
 @seoul_bp.route('/park', methods=['GET', 'POST'])
 def park():
@@ -71,6 +73,7 @@ def park():
             mtime = int(os.stat(html_file).st_mtime)
             return render_template('seoul/park_res2.html', menu=menu, 
                                     park_result=park_result, mtime=mtime)
+
 
 @seoul_bp.route('/park_gu/<option>')
 def park_gu(option):
